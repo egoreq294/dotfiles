@@ -113,8 +113,7 @@ sudo apt install -y \
   g++ \
   qemu-guest-agent \
   fail2ban \
-  openssh-server \
-  fastfetch
+  openssh-server
 
 # ============================================================
 # Install latest Neovim

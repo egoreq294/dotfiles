@@ -9,7 +9,9 @@ if status is-interactive
     # set -g fish_greeting "fastfetch"
 
     function fish_greeting
-        fastfetch
+        if command -q fastfetch
+            fastfetch
+        end
     end
 
     alias ls='eza -al --color=always --group-directories-first' # my preferred listing
