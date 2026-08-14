@@ -1,0 +1,16 @@
+[user]
+  email = egoreq@bk.ru
+  name = egoreq
+
+[delta]
+    dark = true
+    side-by-side = true
+    line-numbers = true
+    navigate = true
+    syntax-theme = Dracula
+
+[interactive]
+    diffFilter = delta --color-only
+
+[core]
+    pager = delta
