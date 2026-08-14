@@ -113,7 +113,8 @@ sudo apt install -y \
   g++ \
   qemu-guest-agent \
   fail2ban \
-  openssh-server
+  openssh-server \
+  eza
 
 # ============================================================
 # Install latest Neovim
