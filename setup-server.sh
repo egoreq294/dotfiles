@@ -226,7 +226,8 @@ fi
 # ------------------------------------------------------------
 
 CURRENT_SSH_PORT="$(
-  sudo sshd -T | awk '$1 == "port" { print $2; exit }'
+    sudo sshd -T |
+        awk '$1 == "port" { print $2; found=1 } END { if (!found) exit 1 }'
 )"
 
 if [[ -z "$CURRENT_SSH_PORT" ]]; then
