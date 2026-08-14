@@ -30,5 +30,8 @@ if status is-interactive
         set -gx https_proxy http://127.0.0.1:10808
     end
 
+    set -gx EDITOR nvim
+    set -gx VISUAL nvim
+
 end
 set -gx PATH $HOME/.local/bin $PATH
