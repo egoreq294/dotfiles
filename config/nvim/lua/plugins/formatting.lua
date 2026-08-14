@@ -65,10 +65,6 @@ return {
           cwd = require("conform.util").root_file({ "package.json", ".git" }),
         },
       },
-      format_on_save = {
-        timeout_ms = 5000,
-        lsp_fallback = true,
-      },
     },
   },
 }
